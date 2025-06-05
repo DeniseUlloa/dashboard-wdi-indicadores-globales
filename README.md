@@ -1,4 +1,4 @@
-# 🌐 Dashboard Global de Indicadores 
+# 🌐 Visualización Interactiva de Indicadores Económicos y Sociales Globales con R Shin
 
 [Ver demo en línea 🚀](https://denisulloa.shinyapps.io/PROYECTO0306/)
 
