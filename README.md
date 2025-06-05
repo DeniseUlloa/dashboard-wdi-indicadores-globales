@@ -171,3 +171,18 @@ MIT License
 
 🔗 [https://github.com/DeniseUlloa/dashboard-wdi-indicadores-globales](https://github.com/DeniseUlloa/dashboard-wdi-indicadores-globales)
 
+---
+
+## 📚 Referencias Bibliográficas
+
+- Banco Mundial. (2023). *World Development Indicators (WDI)*. Retrieved from [https://data.worldbank.org/indicator](https://data.worldbank.org/indicator)
+
+- Gapminder Foundation. (2023). *Gapminder Tools & Data*. Retrieved from [https://www.gapminder.org/data/](https://www.gapminder.org/data/)
+
+- Wickham, H., & Grolemund, G. (2017). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. O’Reilly Media. [https://r4ds.had.co.nz](https://r4ds.had.co.nz)
+
+- Chang, W. (2021). *Shiny: Web Application Framework for R*. R package version 1.7.1. [https://shiny.rstudio.com](https://shiny.rstudio.com)
+
+- Sievert, C. (2020). *Interactive Web-Based Data Visualization with R, plotly, and shiny*. Chapman and Hall/CRC. [https://plotly-r.com](https://plotly-r.com)
+
+- R Core Team. (2023). *R: A Language and Environment for Statistical Computing*. R Foundation for Statistical Computing. [https://www.R-project.org/](https://www.R-project.org/)
