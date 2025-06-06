@@ -154,7 +154,7 @@ Incluye más de **20 indicadores** provenientes del Banco Mundial, entre ellos:
 - **ULLOA DE LA CRUZ, Denis Yanin**  
   [🔗 github.com/DeniseUlloa](https://github.com/DeniseUlloa)
 
-- **VILCA SANGAY, Jesús Oma**  
+- **VILCA SANGAY, Jesús Omar**  
   [🔗 github.com/vilcas](https://github.com/vilcas)
 
 - **YAULI MINA, Juan Admeht**  
