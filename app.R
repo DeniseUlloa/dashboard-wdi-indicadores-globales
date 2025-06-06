@@ -326,7 +326,7 @@ ui <- dashboardPage(
               fluidRow(
                 box(width = 4, title = "PIB per cápita vs Esperanza de Vida", plotlyOutput("pib_vs_vida")),
                 box(width = 4, title = "Pobreza extrema vs Mortalidad", plotlyOutput("pobreza_vs_mortalidad")),
-                box(width = 4, title = "Esperanza de Vida vs PIB per cápita", plotlyOutput("vida_vs_pib"))
+                box(width = 4, title = "Esperanza de Vida vs Pobreza extrema", plotlyOutput("vida_vs_pobreza"))
               )
               
       ),
@@ -696,9 +696,9 @@ server <- function(input, output, session) {
     plot_ly(df, x = ~pobreza, y = ~mortalidad, type = "scatter", mode = "markers", text = ~year)
   })
   
-  output$vida_vs_pib <- renderPlotly({
+  output$vida_vs_pobreza <- renderPlotly({
     df <- datos %>% filter(country == input$pais_ind, year >= input$rango_anios[1], year <= input$rango_anios[2])
-    plot_ly(df, x = ~esperanza_vida, y = ~pib, type = "scatter", mode = "markers", text = ~year)
+    plot_ly(df, x = ~esperanza_vida, y = ~pobreza, type = "scatter", mode = "markers", text = ~year)
   })
   
   
