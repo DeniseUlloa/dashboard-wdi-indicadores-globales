@@ -4,6 +4,8 @@
 
 Este proyecto presenta un dashboard interactivo desarrollado en **R Shiny** que permite la exploración visual de más de 20 indicadores clave del desarrollo global, abarcando temas como economía, educación, salud, demografía, medio ambiente y empleo. La información visualizada proviene de dos fuentes reconocidas internacionalmente: **Gapminder** y el **Banco Mundial**, específicamente su base de datos oficial **World Development Indicators (WDI)**.
 
+Este desarrollo se enmarca en el curso de **Herramientas Informáticas** de la **Maestría en Economía con mención en Data Analytics** de la **Universidad Continental**, como parte de un proyecto académico aplicado a la visualización de datos para la toma de decisiones.
+
 **Gapminder**, fundación sin fines de lucro creada por Hans Rosling, es ampliamente conocida por su enfoque educativo, el uso de animaciones interactivas y la capacidad de comunicar visualmente el desarrollo global con claridad. Sin embargo, Gapminder no siempre mantiene una actualización estrictamente alineada con los informes oficiales, ya que sus datos han sido preprocesados, interpolados o transformados para fines de visualización y comunicación.
 
 Por esta razón, en este proyecto se optó por utilizar directamente la **API del Banco Mundial a través del paquete `WDI` en R**, que permite acceder a los datos originales, actualizados y reportados oficialmente por los gobiernos de cada país. Esta decisión garantiza:
@@ -98,16 +100,42 @@ Permite filtrar por país y rango de años:
 
 ## 📈 Variables e Indicadores
 
-Incluye más de **20 indicadores** provenientes del Banco Mundial, entre ellos:
+Este proyecto analiza datos de **2015 países** y forma parte del curso de **Herramientas Informáticas** de la **Maestría en Economía con mención en Data Analytics**. Se ha desarrollado con fines educativos y de análisis comparativo internacional, utilizando información oficial proveniente del **Banco Mundial (WDI)**.
 
-| Categoría     | Indicadores principales                          |
-|---------------|--------------------------------------------------|
-| Economía      | PIB per cápita, ingreso nacional, inflación      |
-| Educación     | Escolaridad promedio, gasto educativo, alfabetización |
-| Salud         | Esperanza de vida, mortalidad infantil, vacunación |
-| Demografía    | Población, natalidad, fertilidad, mortalidad     |
-| Trabajo       | Desempleo, empleo total, pobreza extrema         |
-| Medio Ambiente y seguridad | Superficie boscosa, gasto militar                |
+Se incluyen **23 indicadores clave**, agrupados en las siguientes categorías:  
+- **Economía (5 indicadores)**  
+- **Educación (4 indicadores)**  
+- **Salud (3 indicadores)**  
+- **Demografía (5 indicadores)**  
+- **Trabajo (3 indicadores)**  
+- **Medio ambiente y seguridad (3 indicadores)**  
+
+A continuación, se detallan los indicadores utilizados, junto con su definición, unidad de medida y período de información disponible:
+
+| **Categoría**               | **Indicador**              | **Definición breve**                                                              | **Unidad**                        | **Años Disponibles** |
+|----------------------------|----------------------------|-----------------------------------------------------------------------------------|-----------------------------------|----------------------|
+| Economía                   | PIB per cápita             | Valor promedio del producto interno bruto por habitante                          | Dólares estadounidenses corrientes| 1982–2022           |
+| Economía                   | Ingreso per cápita         | Ingreso nacional bruto dividido por la población total                           | Dólares estadounidenses corrientes| 1982–2022           |
+| Economía                   | PIB total                  | Valor total del producto interno bruto                                           | Dólares estadounidenses corrientes| 1982–2022           |
+| Economía                   | Ingreso nacional bruto     | Suma del valor agregado por residentes + ingresos netos del exterior             | Dólares estadounidenses corrientes| 1982–2022           |
+| Economía                   | Inflación                  | Variación porcentual anual del índice de precios al consumidor                   | %                                 | 1982–2022           |
+| Educación                  | Escolaridad                | Años promedio de educación formal recibidos por adultos                          | Años                              | 2010                |
+| Educación                  | Gasto en educación         | Porcentaje del PIB destinado al gasto público en educación                       | % del PIB                         | 1982–2022           |
+| Educación                  | Alfabetización             | Porcentaje de adultos que saben leer y escribir                                  | %                                 | 2014–2020           |
+| Educación                  | Matrícula primaria         | Porcentaje de niños en edad escolar inscritos en primaria                        | %                                 | 1995–2018           |
+| Salud                      | Gasto en salud             | Porcentaje del PIB destinado al gasto en salud                                   | % del PIB                         | 2000–2022           |
+| Salud                      | Mortalidad infantil        | Muertes de menores de 1 año por cada 1,000 nacidos vivos                         | Por mil nacidos vivos             | 1982–2022           |
+| Salud                      | Vacunación DPT             | Porcentaje de niños vacunados contra difteria, tos ferina y tétanos              | %                                 | 1982–2022           |
+| Demografía                 | Esperanza de vida          | Años promedio que se espera que viva una persona al nacer                        | Años                              | 1982–2022           |
+| Demografía                 | Población total            | Número total de habitantes                                                       | Habitantes                        | 1982–2022           |
+| Demografía                 | Tasa de fertilidad         | Número promedio de hijos por mujer                                               | Hijos por mujer                   | 1982–2022           |
+| Demografía                 | Tasa de natalidad          | Nacimientos por cada 1,000 personas                                              | Por mil personas                  | 1982–2022           |
+| Demografía                 | Tasa de mortalidad         | Muertes por cada 1,000 personas                                                  | Por mil personas                  | 1982–2022           |
+| Trabajo                    | Pobreza extrema            | Porcentaje de la población con ingresos menores a USD 2.15 diarios               | %                                 | 1997–2022           |
+| Trabajo                    | Desempleo                  | Porcentaje de la fuerza laboral sin empleo                                       | %                                 | 1991–2022           |
+| Trabajo                    | Empleo total               | Porcentaje de población activa empleada                                          | %                                 | 1991–2022           |
+| Medio ambiente y seguridad| Superficie boscosa         | Porcentaje del territorio nacional cubierto por bosques                          | % del territorio nacional         | 1990–2022           |
+| Medio ambiente y seguridad| Gasto militar              | Gasto gubernamental en defensa                                                   | % del PIB                         | 1982–2022           |
 
 ---
 
